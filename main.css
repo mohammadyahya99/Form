@@ -1105,13 +1105,11 @@ pre code {
     max-width: 33.3333333333%;
   }
   .col-md-5 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 41.6666666667%;
-            flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
+   position: relative;
   }
   .col-md-6 {
-    -webkit-box-flex: 0;
+    
+    -webkit-box-flex: 2;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
     max-width: 50%;
@@ -2620,9 +2618,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
+ 
   color: #FFF;
   background-color: #009688;
   border-color: #009688;
+  font-size: 7px;
 }
 
 .btn-primary:hover {
@@ -15049,8 +15049,8 @@ be a descendant of the grid when it is being dragged.
 .app-search__input {
   border: 0;
   padding: 5px 10px;
-  padding-right: 30px;
   border-radius: 2px;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
@@ -15059,6 +15059,7 @@ be a descendant of the grid when it is being dragged.
 
 .app-search__input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.4);
+  text-align: right;
 }
 
 .app-search__input::-moz-placeholder {
@@ -15079,10 +15080,11 @@ be a descendant of the grid when it is being dragged.
 
 .app-search__button {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 10px;
   bottom: 10px;
   padding: 0 10px;
+
   border: 0;
   color: rgba(0, 0, 0, 0.8);
   background: none;
@@ -16740,4 +16742,7 @@ be a descendant of the grid when it is being dragged.
     border: none;
     border-top: 1px solid #000; /* Change the color as desired */
     margin: 10px 0; /* Adjust the margin as needed */
+  }
+  .tablrow{
+    text-align: left;
   }
